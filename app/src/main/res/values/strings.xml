@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Gamer MVVM App</string>
+    <string name="title_login">LOGIN</string>
+    <string name="text_header">Por favor inicia sesion para continuar</string>
+    <string name="textfield_email">Correo Electronico</string>
+    <string name="textfield_password">Contraseña</string>
+    <string name="btn_login">INICIAR SESION</string>
+    <string name="footer_notAcount">No tienes cuenta?</string>
+    <string name="footer_register">RESGISTRATE AQUI</string>
+</resources>
