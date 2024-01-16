@@ -18,18 +18,27 @@ import androidx.core.view.WindowCompat
 
 private val DarkColorScheme = darkColorScheme(
     primary = Red500,
-    secondary = Color.White,
-    tertiary = Drakgray700,
-    background = Drakgray900,
-    onPrimary = Color.White
+    //onPrimary = Color.White,
+    //secondary = Color.White,
+    //onSecondary = Purple40,
+    surface = Color.Red,
+    //background = Drakgray900,
+    //surface = Drakgray900
 )
+//primary: Color principal de la aplicación. Se usa en botones, barras de navegación, etc.
+//secondary: Color secundario de la aplicación. Se usa en elementos complementarios, como iconos o fondos.
+//onPrimary: Color que se usa para el texto y otros elementos sobre el color primary.
+//onSecondary: Color que se usa para el texto y otros elementos sobre el color secondary.
+//surface: Color del fondo de la aplicación.
+//onSurface: Color que se usa para el texto y otros elementos sobre el color surface.
+//error: Color de error de la aplicación. Se usa para mostrar errores o advertencias.
 
 private val LightColorScheme = lightColorScheme(
-    primary = Red500,
-    secondary = Color.White,
-    tertiary = Drakgray700,
-    background = Drakgray900,
-    onPrimary = Color.White
+    //primary = Red500,
+    //secondary = Color.White,
+    //tertiary = Drakgray700,
+    //background = Drakgray900,
+   // onPrimary = Color.White
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),
@@ -68,7 +77,7 @@ fun GamerMVVMAppTheme(
     }
 
     MaterialTheme(
-        colorScheme = colorScheme,
+        colorScheme = DarkColorScheme,
         typography = Typography,
         content = content
     )
