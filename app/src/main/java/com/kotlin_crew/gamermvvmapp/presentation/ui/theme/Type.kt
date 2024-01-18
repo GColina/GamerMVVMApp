@@ -1,4 +1,4 @@
-package com.kotlin_crew.gamermvvmapp.ui.theme
+package com.kotlin_crew.gamermvvmapp.presentation.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

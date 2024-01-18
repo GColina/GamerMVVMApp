@@ -1,5 +1,6 @@
-package com.kotlin_crew.gamermvvmapp.screens.login.components
+package com.kotlin_crew.gamermvvmapp.presentation.screens.login.components
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -14,10 +15,12 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavHostController
 import com.kotlin_crew.gamermvvmapp.R
+import com.kotlin_crew.gamermvvmapp.presentation.navigation.AppScreen
 
 @Composable
-fun LoginBottomBar() {
+fun LoginBottomBar(navController: NavHostController) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -31,10 +34,13 @@ fun LoginBottomBar() {
         )
         Spacer(modifier = Modifier.width(7.dp))
         Text(
+            modifier = Modifier.clickable {
+                navController.navigate(route = AppScreen.SignUp.route)
+            },
             text = stringResource(id = R.string.footer_register),
             fontSize = 14.sp,
             fontWeight = FontWeight.Bold,
-            color = Color.Red
+            color = Color.Red,
         )
     }
 }

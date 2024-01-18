@@ -1,4 +1,4 @@
-package com.kotlin_crew.gamermvvmapp.ui.theme
+package com.kotlin_crew.gamermvvmapp.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build
@@ -18,12 +18,16 @@ import androidx.core.view.WindowCompat
 
 private val DarkColorScheme = darkColorScheme(
     primary = Red500,
-    //onPrimary = Color.White,
-    //secondary = Color.White,
-    //onSecondary = Purple40,
-    surface = Color.Red,
-    //background = Drakgray900,
-    //surface = Drakgray900
+    onPrimary = Color.White,
+    secondary = Color.White,
+    background = Darkgray900,
+
+    onSecondary= Color.Green,
+    surface = Color.Green,
+    tertiary = Color.Yellow,
+    onSurface = Color.Green
+
+
 )
 //primary: Color principal de la aplicación. Se usa en botones, barras de navegación, etc.
 //secondary: Color secundario de la aplicación. Se usa en elementos complementarios, como iconos o fondos.
@@ -34,11 +38,18 @@ private val DarkColorScheme = darkColorScheme(
 //error: Color de error de la aplicación. Se usa para mostrar errores o advertencias.
 
 private val LightColorScheme = lightColorScheme(
-    //primary = Red500,
-    //secondary = Color.White,
-    //tertiary = Drakgray700,
-    //background = Drakgray900,
-   // onPrimary = Color.White
+    primary = Red500,
+    onPrimary = Color.White,
+    secondary = Color.White,
+    background = Darkgray900,
+
+
+
+
+    onSecondary= Color.Green,
+    surface = Color.Green,
+    tertiary = Color.Yellow,
+    onSurface = Color.Green
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),
@@ -65,15 +76,15 @@ fun GamerMVVMAppTheme(
         }
 
         darkTheme -> DarkColorScheme
-        else -> LightColorScheme
+        else -> DarkColorScheme
     }
     val view = LocalView.current
     if (!view.isInEditMode) {
-        SideEffect {
+        /*SideEffect {
             val window = (view.context as Activity).window
             window.statusBarColor = colorScheme.primary.toArgb()
             WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = darkTheme
-        }
+        }*/
     }
 
     MaterialTheme(

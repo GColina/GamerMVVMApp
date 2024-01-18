@@ -1,4 +1,4 @@
-package com.kotlin_crew.gamermvvmapp.ui.theme
+package com.kotlin_crew.gamermvvmapp.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
@@ -12,6 +12,6 @@ val Pink40 = Color(0xFF7D5260)
 val Red200 = Color(0xFFff6f60)
 val Red500 = Color(0xFFf24d45)
 val Red700 = Color(0xFFab000d)
-val Drakgray500 = Color(0xFF272727)
-val Drakgray700 = Color(0xFF202020)
-val Drakgray900 = Color(0xFF1B1B1B)
+val Darkgray500 = Color(0xFF272727)
+val Darkgray700 = Color(0xFF202020)
+val Darkgray900 = Color(0xFF1B1B1B)
