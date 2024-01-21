@@ -7,4 +7,5 @@
     <string name="btn_login">INICIAR SESION</string>
     <string name="footer_notAcount">No tienes cuenta?</string>
     <string name="footer_register">RESGISTRATE AQUI</string>
+    <string name="topAppBar_SignUp">Nuevo usuario</string>
 </resources>
